@@ -1,3 +1,30 @@
-.App {
+* {
   text-align: center;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.baby-name-picker {
+  border: 2px black solid;
+  padding: 10px;
+}
+
+.baby-names {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boy,
+.girl {
+  background-color: #2980b9;
+  color: #7f8c8d;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.girl {
+  background-color: #fab1a0;
 }
