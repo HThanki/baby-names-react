@@ -19,7 +19,11 @@ function BabyNames() {
         .map((babyName) => {
           const { id, name, sex } = babyName;
           const isBoy = sex === "m";
-          return <div className={isBoy ? "boy" : "girl"}>{name}</div>;
+          return (
+            <div className={isBoy ? "boy" : "girl"} index={id}>
+              {name}
+            </div>
+          );
         })}
     </div>
   );
