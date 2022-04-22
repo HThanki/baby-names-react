@@ -8,9 +8,13 @@ function BabyNames() {
         .sort((a, z) => {
           const nameA = a.name;
           const nameZ = z.name;
-          if (nameA > nameZ) return 1;
-          else if (nameA < nameZ) return -1;
-          else 0;
+          if (nameA > nameZ) {
+            return 1;
+          } else if (nameA < nameZ) {
+            return -1;
+          } else {
+            return 0;
+          }
         })
         .map((babyName) => {
           const { id, name, sex } = babyName;
